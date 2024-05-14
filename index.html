@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Фертъ">
+    <title>Фєртъ</title>
+
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/style/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading">
+        <h1>Фєртъ</h1>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="header_logo-content">
+                <h1 id="fert">Фєртъ</h1>
+                <h1 id="forest">FOREST</h1>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+
+        <section class="gallery">
+
+            <div class="gallery-item">
+                <img class="gallery-item_img showBlock" src="img/image/image_3x4_(10).jpg" alt="">
+                <div class="gallery-item_text showBlock">
+                    <p>Лес - наш храм. Наши предки славяне называли рощи и леса священными местами, 
+                        в которых можно отдать дань Богам. Сохраняйте леса в чистоте, 
+                        именно под ними укрывались в битвах наши предки, 
+                        и именно они связывают нас с ними.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-item_img showBlock" src="img/image/image_3x4_(15).jpg" alt="">
+                <div class="gallery-item_text showBlock"></div>
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-item_img showBlock" src="img/image/image_3x4_(17).jpg" alt="">
+                <div class="gallery-item_text showBlock">
+                    <img class="smile" src="img/Logo-Smile_mask.png" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img class="gallery-item_img showBlock" src="img/image/image_3x4_(13).jpg" alt="">
+                <div class="gallery-item_text showBlock"></div>
+            </div>
+        </section>
+
+        <section class="swiper-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="swiper__slide-content">
+                            <img src="img/image/image_3x4_(1).jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__slide-content">
+                            <img src="img/image/image_3x4_(7).jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__slide-content">
+                            <img src="img/image/image_3x4_(3).jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__slide-content">
+                            <img src="img/image/image_3x4_(4).jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__slide-content">
+                            <img src="img/image/image_3x4_(5).jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper__slide-content">
+                            <img src="img/image/image_3x4_(6).jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper__pagination1-container">
+                <div class="swiper-pagination1"></div>
+            </div>
+
+            <div class="swiper_button-container swiper_button-container_prev">
+                <button class="swiper-button-prev1"></button>
+            </div>
+
+            <div class="swiper_button-container swiper_button-container_next">
+                <button class="swiper-button-next1"></button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="http://fert.space/" class="logo">Фєртъ</a>
+        <p>Наши контакты для обращений: 
+            <a href="mailto:fert500128@gmail.com" title="Отправить письмо" target="_blank" class="links">fert500128@gmail.com</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script>
+    SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime    : 800,
+        // Размер шага в пикселях 
+        stepSize         : 75,
+    
+        // Дополнительные настройки:
+        
+        // Ускорение 
+        accelerationDelta : 30,  
+        // Максимальное ускорение
+        accelerationMax   : 2,   
+    
+        // Поддержка клавиатуры
+        keyboardSupport   : true,  
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll       : 50,
+    
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm   : true,
+        pulseScale       : 4,
+        pulseNormalize   : 1,
+    
+        // Поддержка тачпада
+        touchpadSupport   : true,
+    })
+    </script>
+</body>
+</html>
